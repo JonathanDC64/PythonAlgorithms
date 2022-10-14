@@ -1,4 +1,15 @@
-from algorithms.bubble_sort import bubble_sort
+from algorithms.bubble_sort
+
+def bubble_sort(x):
+    n = len(arr)
+    
+    for i in range(n-1):                                          # range(n) also work but outer loop will
+        
+        for j in range(0, n-i-1):                                  
+            if arr[j] > arr[j + 1]:                                # Swap if the element found is greater
+                swapped = True
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
 
 def main() -> int:
     bubble_sort_input = [2,7,3,9,4,0,4]
