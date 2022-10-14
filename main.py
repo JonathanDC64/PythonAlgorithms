@@ -1,6 +1,7 @@
 from algorithms.selection_sort import selection_sort
 from algorithms.insertion_sort import insertion_sort
 from algorithms.bubble_sort import bubble_sort
+from algorithms.merge_sort import merge_sort
 
 
 def main() -> int:
@@ -26,7 +27,14 @@ def main() -> int:
     bubble_sort(bubble_sort_input)
     print(f"Bubble sort output {bubble_sort_input}")
 
+    ### Merge Sort ###
+    merge_sort_input = [5, 2, 7, 8, 5, 1, 0, 9, 4]
+    print(f"Merge sort input {merge_sort_input}")
+
+    merge_sort(merge_sort_input)
+    print(f"Merge sort output {merge_sort_input}")
     return 0
+
 
 if __name__ == "__main__":
     main()
